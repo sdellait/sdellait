@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: auto;
+            
+            font-family: 'Arial', sans-serif;
+            align-items: centre;
+            justify-content: centre;
+            background-color: rgb(255,255,255);
+        }
+        @media screen and (max-width: 600px) {
+            nav a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .linkA {
+        color: rgb(2, 125, 218);
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: auto;
+        }
+        .linkB {
+        color: rgb(2, 125, 218);
+        text-decoration: none;
+        margin-bottom: auto;
+        }
+        .linkC {
+        color: rgb(2, 125, 218);
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 10px;
+        }
+
+        p {
+        font-size: large;
+        }
+        p2 {
+        font-size: small;
+        }
+        h3{
+            font-size:xx-large;
+            margin-bottom: auto;
+        }
+        p3{
+            font-size: medium;
+            font-weight:550;
+            margin-bottom: auto;
+        }
+
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+        nav a {
+            display: inline-block;
+            padding: 8px 30px;
+            color: rgb(179, 179, 179);
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(255,255,255);
+            color: black;
+        }
+
+        .logo {
+            max-height:24px;
+        }
+        .logoB {
+            max-height: 36px;
+        }
+
+        .hero-banner {
+            height: 420px;
+            background-color: rgb(255,255,255);
+            color: 000;
+            text-align: center;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+        }
+        .hero-banner img{
+            max-width:380px;
+            /*display: flex;*/
+            justify-content: centre;
+            align-items: centre;
+            justify-content: center;
+            margin:5px
+        }
+        .hero-banner h1 {
+            /*font-size: 2.5em;*/
+            margin-bottom: 20px;
+            justify-content center;
+        }
+        .hero-banner-2 {
+            height: 489px;
+            background-color: #000;
+            color: rgb(255,255,255);
+            align-content: center;
+        }    
+        .hero-img{
+            max-width:250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+        /*DEPRECATED .grid-img {
+            max-height: 150px;
+        }*/
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 60%);
+            grid-template-rows: repeat(2, 325px);
+            gap: 8px 16px;
+            max-width: 80%;
+            margin-left: 14px;
+            margin-right: 14px;
+        }
+
+        .grid-item {
+            background-color: rgb (250, 250, 250);
+            padding: 10px 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <a href="#"><img src="images\logo.png" class="logo"></a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">TV</a>"
+        <a href="#">Music</a>"
+        <a href="#">Support</a>"
+    </nav>
+
+    <div class="hero-banner">
+        <img src="images/12.webp" class="logoB">
+        <h1>iPhone 11</h1>
+        <p href="#" class="linkA">Shop Now ></p>
+        <img src="images/6.png" class="hero-img">
+    </div>
+    <div class="hero-banner hero-banner-2">
+        <h1>iPhone 11 Pro</h1>
+        <p>Pro cameras. Pro display. Pro performance.</p>
+        <p2>From $24.95/mo. or $599 with trade-in.</p2>
+        <p href="#" class="linkB">Learn more > Buy ></p>
+        <img src="images/5.png" class="hero-img" style="max-width:700px;">
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Mac</h3>
+            <p3>Our most powerful pro lineup<br>ever. Ready for your best work<br>ever.</p3>
+            <p href="#" class="linkC">Learn more > Buy ></p>
+            <img src="images/1.png" style="max-height: 170px">
+        </div>
+        <div class="grid-item">
+            <h3>iPad</h3>
+            <p3>Like a computer. Unlike any<br>computer.</p3>
+            <p href="#" class="linkC">Learn more > Buy ></p>
+            <img src="images/2.png" style="max-height: 130px">
+        </div>
+        <div class="grid-item">
+            <h3>iPhone</h3>
+            <p3>Just the right amound of<br>everything.</p3>
+            <p href="#" class="linkC">Learn more > Buy ></p>
+            <img src="images/3.png" style="max-height: 120px">
+        </div>
+        <div class="grid-item">
+            <h3>Watch</h3>
+            <p3>You've never seen a watch like<br>this.</p3>
+            <p href="#" class="linkC">Learn more > Buy ></p>
+            <img src="images/4.png" style="max-height: 160px">
+        </div>
+    </div>
+
+</body>
+</html>
